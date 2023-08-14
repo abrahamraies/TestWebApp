@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el header */
+.header {
+  background-color: #ffc107;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav-links a.active-link {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+  }
+}
+
+
+/* Estilos para el componente HomeComponent */
+.home-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.home-container h1 {
+  font-size: 28px;
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.start-button:hover {
+  background-color: #0d8bf1;
+}

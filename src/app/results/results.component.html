@@ -1,0 +1,19 @@
+<!-- results.component.html -->
+
+<div class="container">
+  <h2>Results</h2>
+
+  <p>You answered {{ correctAnswersCount }} out of {{ questions.length }} correctly.</p>
+
+  <ul class="results-list">
+    <li *ngFor="let question of questions; let i = index">
+      <h3>Question {{ i + 1 }}</h3>
+      <p>{{ question.text }}</p>
+      <p>Your answer: {{ userAnswers[i] }}</p>
+      <p class="explanation">Explanation: {{ question.explanation }}</p>
+      <p class="example">Example: {{ question.example }}</p>
+    </li>
+  </ul>
+
+  <button class="retry-button" (click)="goBackToTest()">Retry Test</button>
+</div>

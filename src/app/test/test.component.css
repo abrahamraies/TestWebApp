@@ -1,0 +1,19 @@
+/* test.component.css */
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.options-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.next-button {
+  margin-top: 20px;
+}

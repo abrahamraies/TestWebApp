@@ -1,0 +1,13 @@
+/* results.component.css */
+
+.results-list {
+  padding-left: 0;
+}
+
+.explanation, .example {
+  font-style: italic;
+}
+
+.retry-button {
+  margin-top: 20px;
+}

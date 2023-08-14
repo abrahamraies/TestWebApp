@@ -1,0 +1,19 @@
+<!-- position.component.html -->
+
+<div class="container">
+  <h2>Select Position</h2>
+
+  <div class="position-options">
+    <div class="option" (click)="selectPosition('Developer')">
+      <h3>Developer</h3>
+      <p>Software Developer</p>
+    </div>
+
+    <div class="option" (click)="selectPosition('Analyst')">
+      <h3>Analyst</h3>
+      <p>Analyst position</p>
+    </div>
+
+  </div>
+  <button class="back-button" (click)="goBack()">Volver atrás</button>
+</div>

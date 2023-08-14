@@ -1,0 +1,15 @@
+<div class="news-container">
+  <h2>Últimas noticias</h2>
+
+  <div *ngIf="newsData && newsData.length > 0" class="news-list">
+    <div *ngFor="let newsItem of newsData" class="news-item">
+      <h3>{{ newsItem.title }}</h3>
+      <p>{{ newsItem.content }}</p>
+      <a [href]="newsItem.url" target="_blank">{{ newsItem.title }}</a>
+    </div>
+  </div>
+  <div *ngIf="!(newsData && newsData.length > 0)">
+    <p>No hay noticias disponibles en este momento.</p>
+  </div>
+
+</div>

@@ -1,0 +1,25 @@
+<!-- test.component.html -->
+
+<div class="container">
+  <h2>Test de nivel de seniority: {{ seniority }}</h2>
+  <h2>Tipo de posición: {{ position }}</h2>
+  <h2>Question {{ currentQuestionIndex + 1 }}</h2>
+  <p class="question-text">{{ questions[currentQuestionIndex].text }}</p>
+
+  <ul class="options-list">
+    <li class="option" *ngFor="let option of questions[currentQuestionIndex].options">
+      <label>
+        <input
+          type="radio"
+          name="answer"
+          [value]="option"
+          (change)="selectAnswer(option)"
+        />
+        {{ option }}
+      </label>
+    </li>
+  </ul>
+
+  <button class="next-button" (click)="nextQuestion()">Next</button>
+  <button (click)="finishTest()">Finalizar test</button>
+</div>

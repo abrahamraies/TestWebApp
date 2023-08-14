@@ -1,0 +1,26 @@
+<div class="seniority-container">
+  <h2>Select Seniority Level</h2>
+
+  <div class="seniority-options">
+    <div class="option" (click)="selectSeniority('Trainee')">
+      <h3>Trainee</h3>
+      <p>Junior knowledge level</p>
+    </div>
+
+    <div class="option" (click)="selectSeniority('Junior')">
+      <h3>Junior</h3>
+      <p>Mid-level knowledge and experience</p>
+    </div>
+
+    <div class="option" (click)="selectSeniority('Semi-Senior')">
+      <h3>Semi-Senior</h3>
+      <p>Higher knowledge and experience</p>
+    </div>
+
+    <div class="option" (click)="selectSeniority('Senior')">
+      <h3>Senior</h3>
+      <p>Advanced knowledge and extensive experience</p>
+    </div>
+  </div>
+  <button class="back-button" (click)="goBack()">Volver atrás</button>
+</div>
